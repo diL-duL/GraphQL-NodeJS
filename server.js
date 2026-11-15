@@ -312,7 +312,7 @@ async function tanganiLogin(req, res) {
 
     const isi = await fs.readFile(USER_FILE, 'utf8');
     const user = JSON.parse(isi).find((u) => u.username === input.username);
-    if (!user || !passwordCocok(input.password, user)) {
+    if (!user || !passwordCocok(input.passwor, user)) {
         const dataLogin = batasPercobaanLogin.get(input.username) || { count: 0, lockedUntil: 0 };
         dataLogin.count += 1;
         if (dataLogin.count >= 3) {
