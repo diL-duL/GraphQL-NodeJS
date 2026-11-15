@@ -6,7 +6,6 @@
 // Tambahkan console.log identitas Anda pada baris paling atas ini jika untuk tugas mandiri.
 // console.log('Nama Lengkap - Stambuk');
 
-const http = require('http');
 const fs = require('fs/promises');
 const path = require('path');
 const crypto = require('crypto');
